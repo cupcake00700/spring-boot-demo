@@ -1,0 +1,21 @@
+spring.application.name=demo
+server.port=8081
+
+
+# Default database configuration (overridden by profile-specific properties)
+spring.datasource.url=jdbc:h2:mem:defaultdb
+spring.datasource.username=defaultuser
+spring.datasource.password=defaultpass
+
+# Default profile to be active
+#spring.profiles.active=test
+management.endpoints.web.exposure.include=*
+management.info.os.enabled = true
+management.info.git.mode = FULL
+management.info.java.enabled = true
+management.info.env.enabled=true
+
+#management.info.env.enabled=true
+info.app.name=My Spring Boot App
+info.app.description=This is a sample Spring Boot application.
+info.app.version=1.0.0
